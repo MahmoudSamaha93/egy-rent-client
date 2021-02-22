@@ -3,27 +3,6 @@ import React from "react";
 import { Route } from "react-router-dom";
 import "./Card.css";
 
-/* export function Card({ src, title }) {
-  return (
-    <Route
-      render={({ history }) => (
-        <div
-          className="col col-md-4 col-lg-3 "
-          onClick={() => {
-            history.push(`/search-result/location=${title}`);
-          }}
-        >
-          <div className="card">
-            <img src={src} alt="" className="divIMG" />
-            <div className="card__info">
-              <h2 className="text-center text-uppercase">{title}</h2>
-            </div>
-          </div>
-        </div>
-      )}
-    />
-  );
-} */
 const Ecard = ({ posts }) => {
  
   if (posts) {
@@ -38,7 +17,7 @@ const Ecard = ({ posts }) => {
           >
             <div className="card Ecard border-0">
               <img
-                src={"http://localhost:5000/uploads/" + post.pictures[0]}
+                src={"https://fathomless-stream-04225.herokuapp.com/uploads/" + post.pictures[0]}
                 alt=""
                 className="imgDivEcard"
               />
